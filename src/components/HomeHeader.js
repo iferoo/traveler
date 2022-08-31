@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function Header() {
+export default function HomeHeader({imgUrl}) {
   return (
     <header
       id="gtco-header"
       className="gtco-cover gtco-cover-md"
       role="banner"
-      style={{backgroundImage: `url('images/img_bg_2.jpg')`}}
+      style={{backgroundImage: `url(${imgUrl})`}}
     >
       <div className="overlay"></div>
       <div className="gtco-container">

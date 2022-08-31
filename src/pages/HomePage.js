@@ -1,7 +1,7 @@
 import React from 'react';
 import Destination from '../components/Destination';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+import HomeHeader from '../components/HomeHeader';
 import HowItWork from '../components/HowItWork';
 import NavBar from '../components/NavBar';
 import OurSuccess from '../components/OurSuccess';
@@ -13,7 +13,7 @@ export default function HomePage() {
     <div>
       <div className='home-header'>
         <NavBar />
-        <Header />
+        <HomeHeader imgUrl='images/img_bg_2.jpg'/>
       </div>
       <Destination />
       <HowItWork />

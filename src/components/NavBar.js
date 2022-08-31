@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -7,18 +8,18 @@ export default function NavBar() {
         <div className="row">
           <div className="col-sm-4 col-xs-12">
             <div id="gtco-logo">
-              <a href="index.html">
+              <Link to="/">
                 Traveler <em>.</em>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-xs-8 text-right menu-1">
             <ul>
               <li>
-                <a href="destination.html">Destination</a>
+                <Link to="/destination">Destination</Link>
               </li>
               <li className="has-dropdown">
-                <a href="#">Travel</a>
+                <Link to="/">Travel</Link>
                 <ul className="dropdown">
                   <li>
                     <a href="#">Europe</a>
@@ -35,10 +36,10 @@ export default function NavBar() {
                 </ul>
               </li>
               <li>
-                <a href="pricing.html">Pricing</a>
+                <Link to="/pricing">Pricing</Link>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
